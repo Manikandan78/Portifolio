@@ -1,0 +1,96 @@
+@import url('index.css');
+.Projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+    background: linear-gradient(
+    to bottom,
+    #93B1A6 0%,     /* Top color */    
+    #183D3D 71%,    /* Blend stops for bottom */
+    #040D12 100%    /* Bottom color */
+  );
+  
+}
+
+.Projects h2{
+    margin: 20px 0 60px 0;
+}
+
+
+.scroll-container {
+  box-shadow: #fff;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  width: 1100px;
+  height: 600px;
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer and Edge */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
+
+.image-card {
+  scroll-snap-align: start;
+  flex: 0 0 100%;
+  position: relative;
+  width:1100px;
+  height:600px;
+}
+
+.image-card img {
+  width: 1100px;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);}
+
+.overlay h2 {
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+
+.overlay a {
+  color: #fff;
+  text-decoration:underline ;
+  font-size:16px;
+}
+
+.scroll-indicator {
+  transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: overlay; */
+    position: absolute;
+    gap: 25px;
+    margin: 45% 10px 3% 30%;
+}
+
+.dot {
+  width: 120px;
+  height: 7px;
+  background-color: #040D12;
+  box-shadow: 0px 0px 10px 1px rgb(46, 124, 86);
+  border-radius: 10px;
+  transition: transform 0.2s ease, background 0.8s ease;
+}
+
+.dot.active {
+  transform: scale(1.0);
+  background: #fff;
+  box-shadow: 0px 0px 10px 1px rgb(154, 154, 154);
+}
+

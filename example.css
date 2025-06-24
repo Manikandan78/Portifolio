@@ -1,0 +1,19 @@
+.navbar {
+  width: 100%;
+  height:max-content;
+  color: #ffffff;
+}
+
+.navbar ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.image{
+    object-fit: cover;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+}

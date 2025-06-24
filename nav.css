@@ -1,0 +1,28 @@
+@import url('index.css');
+
+.navbar {
+  width: 100%;
+  height:max-content;
+  position:fixed;
+  padding: 30px;
+  border-bottom: #ffffff 2px solid;
+  z-index:1;
+  background-color: #040D12;
+}
+
+.navbar ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.navbar ul li a:hover{
+  color: #93B1A6;
+  transition: 0.3s;
+}
