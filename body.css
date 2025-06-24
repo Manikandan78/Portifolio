@@ -14,8 +14,11 @@
 
 .image{
     position:absolute;
-    top: 15%;
+    top: 20%;
     right: 10%;
+    width : 500px;
+    height: 500px;
+    border-radius: 50%;
 }
 
 .bg{
